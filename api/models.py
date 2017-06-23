@@ -7,7 +7,7 @@ class Datatable(models.Model):
     number = models.FloatField()
     data = models.FloatField()
     volume = models.IntegerField()
-    image = models.ImageField(upload_to="Images/",default="")
+    image = models.ImageField(upload_to="Images/",default='Images/No-img.jpg')
 
     def __str__(self):
         return self.text
